@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-xs-12">
+    <form action="#">
+      <div class="form-group">
+        <label for="userId">User Id:</label>
+        <input type="text" class="form-control" placeholder="Enter User Id" id="userId" [value]="user.userId">
+      </div>
+      <div class="form-group">
+        <label for="userName">User Name:</label>
+        <input type="text" class="form-control" placeholder="Enter User Name" id="userName" value="{{user.firstName + ' ' + user.lastName}}">
+      </div>
+      <div class="form-group">
+        <label for="status">Status:</label>
+        <input type="text" class="form-control" placeholder="Status" id="status" [value]="user.status">
+      </div>
+      <button type="button" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>

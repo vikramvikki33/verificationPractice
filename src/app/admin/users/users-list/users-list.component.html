@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-xs-12">
+    <div class="table-responsive-sm">
+      <table class="table table-bordered table-sm">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>user Id</th>
+            <th>Full Name</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td>#</td>
+            <td><a href="#" (click)="onUserSelect(user)"> {{user.userId }}</a></td>
+            <td><a href="#" (click)="onUserSelect(user)"> {{user.firstName + " " + user.lastName }}</a></td>
+            <td>{{ user.status }}</td>
+          </tr>
+          <!-- <app-user-item *ngFor="let userItem of users"
+          [user]="userItem"></app-user-item> -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="row">
+  <div class="col-xs-12">
+    <app-user-item [usersItems]="users"
+    (userSelected)="selectedUser($event)"></app-user-item>
+  </div>
+</div> -->
